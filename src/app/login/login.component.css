@@ -1,0 +1,30 @@
+.card {
+  /* margin-top: 10px; */
+  border: none;
+  width: 500px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(55, 55, 111);
+}
+
+.navbar-custom {
+  background-color: rgb(55, 55, 111);
+}
+
+.button-booklist {
+  background-color: #188b3f;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 22px;
+}

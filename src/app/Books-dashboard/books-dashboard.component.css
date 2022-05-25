@@ -1,0 +1,42 @@
+.navbar-custom {
+  background-color: rgb(55, 55, 111);
+}
+
+.button-wishlist {
+  background-color: #2c80cf;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 22px;
+}
+
+.button-completedList {
+  background-color: #188b3f;
+  /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 22px;
+}
+
+.btn-logout {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+}
+
+.title {
+  font-size: 14px;
+}

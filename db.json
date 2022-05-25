@@ -1,0 +1,130 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "THE WINGS OF FIRE",
+      "roll": 107,
+      "email": "A.P.J ABDUL KALAM",
+      "mobile": "",
+      "salary": "",
+      "wishlist": false,
+      "completedList": false
+    },
+    {
+      "id": 2,
+      "name": "TIME MACHINE",
+      "roll": 879,
+      "email": "H.G.WELLS",
+      "mobile": "",
+      "salary": "",
+      "wishlist": false,
+      "completedList": false
+    },
+    {
+      "id": 3,
+      "name": "A PASSAGE TO INDIA",
+      "roll": 458,
+      "email": "E.M.FORSTER",
+      "mobile": null,
+      "salary": null,
+      "wishlist": false,
+      "completedList": false
+    },
+    {
+      "id": 4,
+      "name": "UTOPIA",
+      "roll": 257,
+      "email": "SIR THOMAS MOOR",
+      "mobile": null,
+      "salary": null,
+      "wishlist": false,
+      "completedList": false
+    },
+    {
+      "id": 5,
+      "name": "CHITRA",
+      "roll": 1254,
+      "email": "R.N.TAGORE",
+      "mobile": null,
+      "salary": null,
+      "wishlist": false,
+      "completedList": false
+    },
+    {
+      "id": 6,
+      "name": "BISARJAN",
+      "roll": 784,
+      "email": "R.N.TAGORE",
+      "mobile": null,
+      "salary": null,
+      "wishlist": false,
+      "completedList": false
+    },
+    {
+      "id": 7,
+      "name": "ANIMAL FARM",
+      "roll": 201,
+      "email": "GEORGE ORWELL",
+      "mobile": null,
+      "salary": null,
+      "wishlist": false,
+      "completedList": false
+    },
+    {
+      "id": 8,
+      "name": "BEN HUR",
+      "roll": 78,
+      "email": "LEWIS WALLACE",
+      "mobile": null,
+      "salary": null,
+      "wishlist": false,
+      "completedList": false
+    },
+    {
+      "id": 9,
+      "name": "BABURNAMA",
+      "roll": 524,
+      "email": "BABUR",
+      "mobile": null,
+      "salary": null,
+      "wishlist": false,
+      "completedList": false
+    },
+    {
+      "id": 10,
+      "name": "ARTHASASTRA",
+      "roll": 325,
+      "email": "KAUTILYA",
+      "mobile": null,
+      "salary": null,
+      "wishlist": false,
+      "completedList": false
+    }
+  ],
+  "signupUsers": [
+    {
+      "id": 1,
+      "fullname": "testing",
+      "email": "test@gmail.com",
+      "password": "testing",
+      "mobile": "8787878787"
+    },
+    {
+      "fullname": "vishwa",
+      "email": "v@gmail.com",
+      "password": "vishwa",
+      "mobile": "9898989898",
+      "id": 2
+    },
+    {
+      "fullname": "ram",
+      "email": "ram@gmail.com",
+      "password": "ram111",
+      "mobile": "9000080000",
+      "id": 3
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

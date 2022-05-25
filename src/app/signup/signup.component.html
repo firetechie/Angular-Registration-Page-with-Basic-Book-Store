@@ -1,0 +1,92 @@
+<nav class="navbar navbar-custom">
+  <div class="container-fluid">
+    <h4 style="color: rgb(255, 255, 255)">Magic Of Books</h4>
+    <div class="d-flex">
+      <button class="btn button-booklist" routerLink="/viewlist">
+        Click Here to See the Booklist Only
+      </button>
+      <button class="btn button1" routerLink="/login" type="button">
+        Login
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div style="color: white" class="text-center">
+          <h1>Registration</h1>
+          <h6>Please Register Yourself!!</h6>
+        </div>
+        <form>
+          <form [formGroup]="signupForm" (ngSubmit)="signUp()">
+            <!-- <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="exampleInputPassword1">
+            </div> -->
+            <div style="color: white" class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Full Name</label
+              >
+              <input
+                formControlName="fullname"
+                type="text"
+                class="form-control"
+                id="exampleInputPassword1"
+              />
+            </div>
+
+            <div style="color: white" class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Email address</label
+              >
+              <input
+                formControlName="email"
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                [ngClass]="{ 'is-invalid': submitted }"
+              />
+              <div id="emailHelp" class="form-text">
+                We'll never share your email with anyone else.
+              </div>
+            </div>
+
+            <div style="color: white" class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Mobile Number</label
+              >
+              <input
+                formControlName="mobile"
+                type="tel"
+                class="form-control"
+                id="exampleInputPassword1"
+              />
+            </div>
+
+            <div style="color: white" class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Password</label
+              >
+              <input
+                formControlName="password"
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+                [ngClass]="{ 'is-invalid': submitted }"
+              />
+            </div>
+
+            <button type="submit" class="btn btn-primary mb-3">Sign Up</button>
+          </form>
+          <a style="color: white; margin-top: 20px" routerLink="/login"
+            >Already Registered? Click to Login</a
+          >
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

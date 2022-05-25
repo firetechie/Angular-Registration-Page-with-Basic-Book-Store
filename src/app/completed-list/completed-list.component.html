@@ -1,0 +1,33 @@
+<nav class="navbar navbar-custom">
+  <div class="container-fluid">
+    <h5 style="color: rgb(255, 255, 255);">Your Completed Of Books</h5>
+  </div>
+</nav>
+
+
+<table class="table mt-4">
+  <thead>
+    <tr>
+      <th scope="col">No.</th>
+      <th scope="col">Fav. Book Name</th>
+      <th scope="col">Pages</th>
+       <th scope="col">Author</th>
+    </tr>
+  </thead>
+
+
+  <tbody>
+    <ng-container *ngFor="let book of bookData">
+
+
+    <tr *ngIf="book.completedList">
+      <td>{{book.id}}</td>
+      <td>{{book.name}}</td>
+      <td>{{book.roll}}</td>
+      <td>{{book.email}}</td>
+
+
+    </tr>
+  </ng-container>
+  </tbody>
+</table>

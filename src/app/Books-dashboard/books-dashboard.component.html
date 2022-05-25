@@ -1,0 +1,73 @@
+<nav class="navbar navbar-custom">
+  <div class="container-fluid">
+    <h4 style="color: rgb(255, 255, 255)">Magic of Books</h4>
+    <div class="d-flex" *ngIf="!viewonly">
+      <!-- <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Add Books
+      </button>&nbsp;&nbsp; -->
+      <button type="button" routerLink="/wishlist" class="btn button-wishlist">
+        WishList
+      </button>
+      <button
+        type="button"
+        routerLink="/completedlist"
+        class="btn button-completedList"
+      >
+        CompletedList
+      </button>
+      <button
+        style="color: white"
+        routerLink="/login"
+        type="button"
+        class="btn btn-danger btn-logout"
+      >
+        Log Out
+      </button>
+    </div>
+  </div>
+</nav>
+
+<table class="table mt-4">
+  <thead>
+    <tr>
+      <th scope="col">No.</th>
+      <th scope="col">Book Name</th>
+      <th scope="col">Pages</th>
+      <th scope="col">Author</th>
+      <th scope="col">WishList</th>
+      <th scope="col">Completed</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let student of studentData" class="title">
+      <td>{{ student.id }}</td>
+      <td>{{ student.name }}</td>
+      <td>{{ student.roll }}</td>
+      <td>{{ student.email }}</td>
+
+      <td *ngIf="!viewonly">
+        <!-- <button (click)="onUpdate(student)" class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button>&nbsp;&nbsp; -->
+        <button
+          type="button"
+          (click)="addtowishlist(student)"
+          class="btn button-wishlist"
+        >
+          {{ !student.wishlist ? "Add to WishList" : "Remove form WishList" }}
+        </button>
+        <!-- <button (click)="deleteStudentDetails(student)"  type="button" class="btn btn-danger">Delete</button> -->
+      </td>
+      <td *ngIf="!viewonly">
+        <!-- <button (click)="onUpdate(student)" class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button>&nbsp;&nbsp; -->
+        <button
+          type="button"
+          (click)="addtocompletedList(student)"
+          class="btn button-completedList"
+        >
+          {{ !student.completedList ? "Add to Completed" : "Remove" }}
+        </button>
+        <!-- <button (click)="deleteStudentDetails(student)"  type="button" class="btn btn-danger">Delete</button> -->
+      </td>
+    </tr>
+  </tbody>
+</table>
